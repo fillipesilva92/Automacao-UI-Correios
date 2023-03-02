@@ -1,0 +1,11 @@
+package elementos;
+
+import org.openqa.selenium.By;
+
+public class Elementos {
+	
+	public By fieldCEP = By.xpath("//input[@id='relaxation']");
+	public By btnBuscar = By.xpath("//div[@style='order: 1']//button[@class='bt-link-ic']");
+	public By mensagemOk = By.xpath("//div[@id='mensagem-resultado']//h5]");
+
+}

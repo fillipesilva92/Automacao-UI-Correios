@@ -1,0 +1,20 @@
+package pages;
+
+import org.openqa.selenium.By;
+
+import metodos.MetodosDeTestes;
+
+public class BuscarCepValidoPage {
+	
+	MetodosDeTestes metodos = new MetodosDeTestes();
+	
+	public void buscarCep(By elemento, String texto, String campo) {
+		metodos.escrever(elemento, texto, campo);
+		metodos.clicar(elemento, campo);
+	}
+	
+	public void validarMensagem(By elemento, String textoEsperado, String campo) {
+		metodos.validarTexto(elemento, textoEsperado, campo);
+	}
+
+}

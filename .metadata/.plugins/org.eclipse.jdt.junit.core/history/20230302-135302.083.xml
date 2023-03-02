@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Executa (1)" project="projeto.cucumber" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="runner.Executa" time="17.114">
+    <testsuite name="Buscar CEP valido" time="17.114">
+      <testcase name="Buscar CEP valido" classname="Buscar CEP valido" time="8.964">
+        <error>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='mensagem-resultado']//h5 (tried for 4 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'FILLIPE', ip: '192.168.0.108', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\FILLIP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58499/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0bf92a09585bb24d531b853dfce1748a&#13;
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)&#13;
+	at metodos.MetodosDeTestes.espera(MetodosDeTestes.java:61)&#13;
+	at pages.BuscarCepValidoPage.validarMensagem(BuscarCepValidoPage.java:29)&#13;
+	at steps.BuscarCepValidoTest.validoBusca(BuscarCepValidoTest.java:36)&#13;
+	at ✽.valido busca(file:///C:/Users/Fillipe%20Silva/eclipse-workspace/ultimo/projeto.cucumber/src/test/resources/features/buscarcep.feature:11)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Buscar CEP inexistente" classname="Buscar CEP valido" time="8.149">
+        <error>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='mensagem-resultado-alerta']//h6 (tried for 4 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'FILLIPE', ip: '192.168.0.108', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\FILLIP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58538/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30a3620d937b67c9761eff9f691a2c32&#13;
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)&#13;
+	at metodos.MetodosDeTestes.espera(MetodosDeTestes.java:61)&#13;
+	at pages.BuscarCepInexistentePage.validarMensagem(BuscarCepInexistentePage.java:28)&#13;
+	at steps.BuscarCepInexistenteTest.sistemaRetornaErro(BuscarCepInexistenteTest.java:36)&#13;
+	at ✽.sistema retorna erro(file:///C:/Users/Fillipe%20Silva/eclipse-workspace/ultimo/projeto.cucumber/src/test/resources/features/buscarcep.feature:18)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

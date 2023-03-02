@@ -1,0 +1,24 @@
+package steps;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class AulaCucumberTest {
+
+	@Given("que esteja no formulario")
+	public void queEstejaNoFormulario() {
+
+	}
+
+	@When("preencher as informacoes")
+	public void preencherAsInformacoes() {
+
+	}
+
+	@Then("formulario enviado")
+	public void formularioEnviado() {
+
+	}
+
+}

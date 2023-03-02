@@ -1,0 +1,28 @@
+package pages;
+
+import org.openqa.selenium.By;
+
+import metodos.MetodosDeTestes;
+
+public class BuscarCepInexistentePage {
+
+	MetodosDeTestes metodos = new MetodosDeTestes();
+
+	public void escreverCep(By elemento, String texto, String campo) {
+		metodos.escrever(elemento, texto, campo);
+	}
+
+	public void aceitarCookies(By elemento, String campo) {
+		metodos.clicar(elemento, campo);
+	}
+	
+	public void clicarBusca(By elemento, String campo) {
+		metodos.espera(elemento);
+		metodos.clicar(elemento, campo);
+	}
+
+	public void validarMensagem(By elemento, String textoEsperado, String campo) {
+		metodos.validarTexto(elemento, textoEsperado, campo);
+	}
+
+}

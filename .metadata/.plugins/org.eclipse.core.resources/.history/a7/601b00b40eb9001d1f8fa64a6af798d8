@@ -1,0 +1,30 @@
+package steps;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class BuscarCepInexistenteTest {
+
+		@Given("que esteja na homepage")
+		public void queEstejaNaHomepage() {
+
+		}
+
+		@Given("digito cep inexistente")
+		public void digitoCepInexistente() {
+
+		}
+		@When("clico no botao pesquisar")
+		public void clicoNoBotaoPesquisar() {
+
+		}
+		@Then("sistema retorna erro")
+		public void sistemaRetornaErro() {
+
+		}
+
+
+
+	
+}

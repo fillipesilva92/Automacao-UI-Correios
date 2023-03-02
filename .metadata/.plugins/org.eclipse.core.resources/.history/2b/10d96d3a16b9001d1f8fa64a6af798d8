@@ -1,0 +1,37 @@
+package runner;
+
+import org.junit.runner.RunWith;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import conexoes.DriversFactory;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.CucumberOptions.SnippetType;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/features", glue = "steps", tags = "@buscarcep", monochrome = true, dryRun = false, plugin = {
+		"pretty", "html:target/cucumber-report.html" }, snippets = SnippetType.CAMELCASE)
+
+public class Executa extends DriversFactory {
+
+	public void abrirNavegador() {
+		String url = "https://www.correios.com.br/";
+		String navegador = "chrome";
+		
+		if (navegador.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			driver.get(url);
+			driver.manage().window().maximize();
+		} else if(navegador.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			driver.get(url);
+			driver.manage().window().maximize();
+		}
+		
+	}
+
+}

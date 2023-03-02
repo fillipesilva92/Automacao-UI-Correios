@@ -1,0 +1,11 @@
+
+@buscarcep
+Feature: Buscar CEP valido
+  Como usuario quero inserir cep para buscar endereco
+
+  @cepvalido
+  Scenario: Buscar CEP valido
+    Given que esteja na homepage
+    And digito cep valido
+    When clico no botao pesquisar
+    Then valido busca

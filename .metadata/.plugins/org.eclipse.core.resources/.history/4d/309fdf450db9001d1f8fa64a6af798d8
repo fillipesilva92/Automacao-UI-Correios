@@ -1,0 +1,33 @@
+package steps;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class BuscarCepValidoTest {
+
+
+		@Given("que esteja na homepage")
+		public void queEstejaNaHomepage() {
+
+		}
+
+		@Given("digito cep valido")
+		public void digitoCepValido() {
+		    
+		}
+		
+		@When("clico no botao pesquisar")
+		public void clicoNoBotaoPesquisar() {
+		}
+		
+		@Then("valido busca")
+		public void validoBusca() {
+
+		}
+
+
+
+
+
+}

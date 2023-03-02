@@ -1,0 +1,35 @@
+package pages;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+
+import metodos.MetodosDeTestes;
+
+public class BuscarCepInexistentePage {
+
+	MetodosDeTestes metodos = new MetodosDeTestes();
+
+	public void escreverCep(By elemento, String texto, String campo, String nomeEvidencia) throws IOException {
+		metodos.escrever(elemento, texto, campo);
+		metodos.tirarEvidencia(nomeEvidencia);
+	}
+
+	public void aceitarCookies(By elemento, String campo) {
+		metodos.clicar(elemento, campo);
+	}
+
+	public void clicarBusca(By elemento, String campo) {
+		metodos.espera(elemento);
+		metodos.clicar(elemento, campo);
+		metodos.fecharAba();
+	}
+
+	public void validarMensagem(By elemento, String textoEsperado, String campo, String nomeEvidencia)
+			throws IOException {
+		metodos.validarTexto(elemento, textoEsperado, campo);
+		metodos.tirarEvidencia(nomeEvidencia);
+
+	}
+
+}

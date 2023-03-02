@@ -1,0 +1,13 @@
+package pages;
+
+import metodos.MetodosDeTestes;
+
+public class BuscarCepValidoPage {
+	
+	MetodosDeTestes metodos = new MetodosDeTestes();
+	
+	public void buscarCep() {
+		
+	}
+
+}

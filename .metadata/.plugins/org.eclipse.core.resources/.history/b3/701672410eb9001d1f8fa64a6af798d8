@@ -1,0 +1,37 @@
+package steps;
+
+import elementos.Elementos;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.BuscarCepValidoPage;
+
+public class BuscarCepValidoTest {
+		
+		BuscarCepValidoPage page = new BuscarCepValidoPage();
+		Elementos elementos = new Elementos();
+
+		@Given("que esteja na homepage")
+		public void queEstejaNaHomepage() {
+		}
+
+		@Given("digito cep valido")
+		public void digitoCepValido() {
+			page.escreverCep(elementos.fieldCEP, "04880255", "Campo CEP");
+		}
+		
+		@When("clico no botao pesquisar")
+		public void clicoNoBotaoPesquisar() {
+			page.clicarBusca(elementos.btnBuscar, "Botão Buscar");
+		}
+		
+		@Then("valido busca")
+		public void validoBusca() {
+
+		}
+
+
+
+
+
+}

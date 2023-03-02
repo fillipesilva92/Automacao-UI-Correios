@@ -1,0 +1,10 @@
+
+@teste
+Feature: Aprendendo cucumber
+  Como aluno quero utilizar o cucumber para aprender esse framework
+
+  @tag1
+  Scenario: Acessar um site e preencher um formulario
+    Given que esteja no formulario
+    When preencher as informacoes
+    Then formulario enviado

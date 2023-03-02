@@ -1,0 +1,35 @@
+package steps;
+
+import elementos.Elementos;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.BuscarCepInexistentePage;
+import pages.BuscarCepValidoPage;
+
+public class BuscarCepInexistenteTest {
+
+	BuscarCepInexistentePage page = new BuscarCepInexistentePage();
+	Elementos elementos = new Elementos();
+
+	@Given("que esteja na homepage")
+	public void queEstejaNaHomepage() {
+
+	}
+
+	@Given("digito cep inexistente")
+		public void digitoCepInexistente() {
+			page
+		}
+
+	@When("clico no botao pesquisar")
+	public void clicoNoBotaoPesquisar() {
+
+	}
+
+	@Then("sistema retorna erro")
+	public void sistemaRetornaErro() {
+
+	}
+
+}

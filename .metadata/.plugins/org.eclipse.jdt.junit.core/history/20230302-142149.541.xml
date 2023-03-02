@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Executa (1)" project="projeto.cucumber" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.Executa" time="18.383">
+    <testsuite name="Buscar CEP valido" time="18.383">
+      <testcase name="Buscar CEP valido" classname="Buscar CEP valido" time="14.039"/>
+      <testcase name="Buscar CEP inexistente" classname="Buscar CEP valido" time="4.344"/>
+    </testsuite>
+  </testsuite>
+</testrun>
